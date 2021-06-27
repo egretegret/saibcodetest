@@ -14,10 +14,10 @@ function App() {
         <Navbar bg="light" expand="lg" fixed="top">
           <Navbar.Brand href="#home">SAIB</Navbar.Brand>
         </Navbar>
-        </header>
-        <div className="contents">
-          <br></br>
-          <br></br>
+      </header>
+      <div className="contents">
+        <br></br>
+        <br></br>
         <h1>About Us</h1>
         <br></br>
         <CarouselCom />
@@ -29,7 +29,7 @@ function App() {
         <br></br>
         <h2>-</h2>
         <Footer />
-        </div>
+      </div>
 
     </div>
   );
