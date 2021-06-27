@@ -1,0 +1,15 @@
+.carousel {
+    width: 50%;
+    color:white;
+}
+
+@media (max-width: 900px) {
+    .carousel {
+      width:auto;
+      height:auto;
+    }
+}
+
+h5 {
+    font-weight: normal;
+}

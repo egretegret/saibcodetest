@@ -1,20 +1,35 @@
-import { Image } from 'react-bootstrap';
+import { Image, Row, Col } from 'react-bootstrap';
+import '../style/HoverCom.css'
 
 function HoverCom() {
     return (
-        <div>
-            <Image className="social-icon" src="./logo192.png"
-                onMouseOver={e => e.currentTarget.src = "./logo512.png"}
-                onMouseOut={e => e.currentTarget.src = "./logo192.png"}
-            />
-            <Image className="social-icon" src="./logo192.png"
-                onMouseOver={e => e.currentTarget.src = "./logo512.png"}
-                onMouseOut={e => e.currentTarget.src = "./logo192.png"}
-            />
-            <Image className="social-icon" src="./logo192.png"
-                onMouseOver={e => e.currentTarget.src = "./logo512.png"}
-                onMouseOut={e => e.currentTarget.src = "./logo192.png"}
-            />
+        <div className="hover-div">
+            <Row>
+                <Col xs={6} md={4}>
+                    <Image className="hover-img"
+                        src="./lubricant.png"
+                        onMouseOver={e => e.currentTarget.src = "./heart.png"}
+                        onMouseOut={e => e.currentTarget.src = "./lubricant.png"}
+                        roundedCircle
+                    />
+                </Col>
+                <Col xs={6} md={4}>
+                    <Image className="hover-img"
+                        src="./condom.png"
+                        onMouseOver={e => e.currentTarget.src = "./heart.png"}
+                        onMouseOut={e => e.currentTarget.src = "./condom.png"}
+                        roundedCircle
+                    />
+                </Col>
+                <Col xs={6} md={4}>
+                    <Image className="hover-img"
+                        src="./femininewash.png"
+                        onMouseOver={e => e.currentTarget.src = "./heart.png"}
+                        onMouseOut={e => e.currentTarget.src = "./femininewash.png"}
+                        roundedCircle
+                    />
+                </Col>
+            </Row>
         </div>
     );
 }

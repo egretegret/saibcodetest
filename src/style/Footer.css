@@ -1,0 +1,14 @@
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+}
+
+p {
+    color: #2a2d4a;
+    font-size: .5em;
+    line-height: 5px;
+    text-align: left;
+}
